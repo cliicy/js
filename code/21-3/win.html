@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+var w1=window.innerWidth;
+var c1=document.documentElement.clientWidth;
+var c2=document.body.clientWidth
+var w=w1|| c1|| c2;
+
+var h1=window.innerHeight;
+var ch1=document.documentElement.clientHeight;
+var ch2=document.body.clientHeight;
+var h=h1 || ch1|| ch2;
+
+x=document.getElementById("demo");
+x.innerHTML="浏览器的内部窗口宽度：" + w + "，高度：" + h + "。"
+</script>
+
+</body>
+</html>

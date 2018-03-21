@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js断点演示</title>
+</head>
+<body>
+
+<div>js断点演示</div>
+
+<script>
+    var myDate=new Date();
+    myDate.setFullYear(2008,8,9);
+
+var today = new Date();
+
+if (myDate>today)
+{
+alert("Today is before 9th August 2008");
+}
+else
+{
+alert("Today is after 9th August 2008");
+}
+var num1=parseFloat(55);
+if(!isNaN((num1))){
+    num1=Math.round((num1*100)/100);
+    var str=num1.toString();
+    var rs=str.indexOf('.');
+    if(rs<0){
+        rs=str.length;
+        str +='.'
+    }
+}
+</script>
+
+</body>
+</html>

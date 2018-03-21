@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     var patt1=new RegExp('abc$.*');
+     document.write(patt1.test("ccabaabc"));
+    document.write("<br />")
+     var finder=patt1.exec("ccabaabc");
+     document.write(finder);
+  document.write("<br />")
+     var patt1=new RegExp("e","g");
+do
+{
+result=patt1.exec("The best things in life are free");
+document.write(result);
+}
+while (result!=null)
+
+</script>
+</body>
+</html>
